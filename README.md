@@ -20,7 +20,7 @@ Instead, they are downloaded from **Google Drive using `gdown`** inside the prov
 - Once downloaded, files are saved locally and reused by the training, prediction,
   and dashboard workflows.
 
-The **only exception** is the `Dashboard/`, which is explained in the  `Dashboard/` section.
+The **only exception** is the `Dashboard/`, which is explained in the  **Dashboard** section.
 
 
 ## Repository structure
