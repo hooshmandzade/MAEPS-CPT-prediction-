@@ -9,6 +9,24 @@ This repository contains notebooks and configuration to:
 
 ---
 
+## Data and model distribution
+
+All **data files and trained models** used by this project — including parquet files and model artifacts — are **not stored directly in this repository**.
+
+Instead, they are downloaded from **Google Drive using `gdown`** inside the provided notebooks.
+
+- Parquet data files are downloaded via the data download / preparation notebooks.
+- Trained model files are downloaded or regenerated via the training notebooks.
+- Once downloaded, files are saved locally and reused by the training, prediction,
+  and dashboard workflows.
+
+The **only exception** is the `Dashboard/` application code itself, which lives
+entirely in this repository.
+
+If required parquet or model files are missing, run the appropriate notebook to
+download them before proceeding.
+
+
 ## Repository structure
 
 - `Data_preperation.ipynb`  
@@ -67,5 +85,5 @@ Once the environment and data are ready:
 1. Open a terminal.
 2. Navigate to the `Dashboard/` folder:
    ```bash
-   cd Dashboard
+   streamlit run app.py
 
