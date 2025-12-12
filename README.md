@@ -36,8 +36,36 @@ This repository contains notebooks and configuration to:
 - `trained_models/`  
   Contains the trained model files. You can use them directly for prediction without retraining.
 
-- `Dashboard/`  
-  Streamlit dashboard for exploring results.  
-  Run from inside this folder with:
-  ```bash
-  streamlit run app.py
+## Dashboard
+
+The dashboard is a **Streamlit application** located in the `Dashboard/` folder.
+It is used to explore CPT data and model outputs interactively.
+
+### Requirements
+Before running the dashboard, make sure that:
+
+- Your Python environment includes all required dependencies  
+  (see `Dashboard/environment.yml` or the main environment configuration).
+- You can run Streamlit (`streamlit` is installed).
+- The required **parquet data files are available locally**.
+
+### Data availability
+The dashboard **does not download data automatically**.
+
+If you do **not** already have the required parquet files:
+1. Open `Files_downloader.ipynb` in the `Dashboard/` folder.
+2. Run the notebook to download the necessary CPT parquet files
+   (via Google Drive).
+3. Verify that the downloaded parquet files are stored in the locations
+   expected by `app.py`.
+
+If the parquet files already exist, this step can be skipped.
+
+### Running the dashboard
+Once the environment and data are ready:
+
+1. Open a terminal.
+2. Navigate to the `Dashboard/` folder:
+   ```bash
+   cd Dashboard
+
