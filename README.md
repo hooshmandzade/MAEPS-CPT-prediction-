@@ -39,8 +39,11 @@ The **only exception** is the `Dashboard/`, which is explained in the  **Dashboa
 
 - `training_No_coordinations.ipynb`  
   Alternative training pipeline without coordinate features.  
-  It is **provided but not used by default**.  
-  If you prefer models without coordinates, use this notebook instead of the one above.
+  This approach was **not pursued further in the current delivery**, as the
+  coordinate-based models were selected as the primary solution.  
+  The notebook is included as a **reference and optional starting point** for
+  you, if to adapt or re-implement the system using
+  non-coordinate models to better fit their own integration constraints.
 
 - `prediction.ipynb`  
   - Loads the parquet with rows to be predicted.  
