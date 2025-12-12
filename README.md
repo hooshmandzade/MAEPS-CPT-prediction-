@@ -20,11 +20,7 @@ Instead, they are downloaded from **Google Drive using `gdown`** inside the prov
 - Once downloaded, files are saved locally and reused by the training, prediction,
   and dashboard workflows.
 
-The **only exception** is the `Dashboard/` application code itself, which lives
-entirely in this repository.
-
-If required parquet or model files are missing, run the appropriate notebook to
-download them before proceeding.
+The **only exception** is the `Dashboard/`, which is explained in the  `Dashboard/` section.
 
 
 ## Repository structure
